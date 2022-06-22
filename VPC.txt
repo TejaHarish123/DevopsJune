@@ -1,0 +1,28 @@
+VPC:
+
+Amazon Virtual Private Cloud is a commercial cloud computing service that provides users a virtual private cloud, by "provisioning a logically isolated section of Amazon Web Services Cloud". VPC gives you full control over your virtual networking environment, 
+including resource placement, connectivity, and security. VPC is a collection of the region, IG, route table, ACL, security group, subnet, instances.
+
+Subnet:
+
+Subnet is a key component in VPC. A VPC can contain all public subnets (or) public/private subnet combination. Subnet is to split a large network into a grouping of smaller, interconnected networks to help minimize traffic. This way, traffic doesn't have to 
+flow through unnecessary routs, increasing network speeds. 
+
+Private Subnet: Private Subnet is a subnet which doesn't have a route to the internet gateway. A subnet can be configured as a VPN-only subnet by routing traffic via virtual private gateway. There is no capability for resources in a private subnet to 
+communicate directly with the Internet, and vice versa.
+Public Subnet: Public Subnet is one that has a Route Table entry that directs traffic destined for 0.0.0.0/0 to an Internet Gateway. This gives the resources on that VPC the ability to communicate with the Internet. The resources will need to be assigned a 
+Public IP address to be able to communicate with the Internet.
+
+Security Group:
+
+A  security group is like a virtual firewall. It consists of a set of rules that can be used to monitor and filter an instance's incoming and outgoing traffic in a Virtual Private Cloud (VPC) instance. Filtering is done on the basis of protocols and ports.
+For example: after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+
+Route Table:
+
+A route table contains a set of rules called routes, that are used to determine where network traffic from subnet or gateway is directed. A route table tells network packets which way they need to go to get to their destination. Each packet contains information 
+about its origin and destination.
+
+NAT:
+
+Network Address Translation Gateway is used to enable instances present in a private subnet to help connect to the internet or AWS services. In addition to this, the gateway makes sure that the internet doesn't initiate a connection with the instances.
